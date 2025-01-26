@@ -1,6 +1,6 @@
 # Student Math Score Predictor - Deployment Using AWS Elastic Beanstalk and Code Pipeline
 
-## [Demo](http://studentperformance-env.eba-5cgkamrs.eu-north-1.elasticbeanstalk.com/)
+## [Live](http://studentperformance-env.eba-5cgkamrs.eu-north-1.elasticbeanstalk.com/)
 
 This repository contains the **Student Math Score Predictor**, a machine learning application that predicts student math scores based on various input features. This guide explains how to deploy the application using **GitHub**, **AWS Elastic Beanstalk**, and **AWS CodePipeline**.
 
@@ -206,4 +206,9 @@ Before starting deployment, create a role and a user with the steps mentioned be
 
 ---
 
-Following this guide, you can deploy the **Student Math Score Predictor** using GitHub, AWS Elastic Beanstalk, and CodePipeline, ensuring a seamless CI/CD workflow for your ML application.
+## Connect
+Connect with me on [LinkedIn](https://www.linkedin.com/in/vishalsinghblr/).
+
+---
+
+Feel free to raise any issues or suggestions in the repository's **Issues** tab.
