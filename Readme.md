@@ -54,6 +54,43 @@ student-math-score-predictor/
 
 ---
 
+### Note:
+
+Before starting deployment, create a role and a user with the steps mentioned below in AWS:
+
+   1. To create a Role with the Required Permissions
+   
+   2. Go to IAM Management Console:
+      - Log in to your AWS account.
+      - Navigate to IAM (Identity and Access Management).
+   
+   3. Create a Role:
+      - In the Roles section, click Create Role.
+      - Select AWS Service as the trusted entity.
+      - Choose EC2 as the service.
+   
+   4. Attach the Required Policies:
+      - AWSElasticBeanstalkWebTier
+      - AWSElasticBeanstalkWorkerTier
+      - AWSElasticBeanstalkMulticontainerDocker
+   
+   5. Click Next and name the role aws-elasticbeanstalk-ec2-role
+   
+   6. Review the settings and click Create Role.
+
+      ![image](https://github.com/user-attachments/assets/2d8190ae-9898-4632-a498-283f1d5ba7ab)
+
+   6. Similarly, create a user with the same name and assign same policies. Repeat steps 3 to 5 for a user.
+
+      ![image](https://github.com/user-attachments/assets/00abee60-3a64-43f5-89c4-d109b981b673)
+
+   `•	The instance profile (aws-elasticbeanstalk-ec2-role) is critical because it grants permissions for Elastic Beanstalk to manage resources on behalf of your application, such as EC2 instances, CloudWatch logs, and more.`
+   
+   `•	The trust relationship ensures that EC2 instances can assume the role, allowing them to access the required AWS services.`
+   
+---
+
+
 ### Step 2: Set Up AWS Elastic Beanstalk
 
 1. **Create an Elastic Beanstalk Environment**:
